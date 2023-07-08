@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <meta name="description" content="hello "/>
+        <meta name="keywords" content="we learn HTML"/>
+        <meta name="author" content="maryam"/>
+        <style>
+            marquee img{
+                width: 200px;
+                height: 150px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <marquee><h1>welcome to my web</h1></marquee>
+        <marquee bgcolor="red">hello</marquee>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee style="background:radial-gradient(black, transparent) ;" height="60" width="300" behavior="slide">maryam</marquee>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee style="background:radial-gradient(black, transparent) ;" height="60" width="300" behavior="alternate">maryam</marquee>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee style="background:radial-gradient(black, transparent) ;" behavior="scroll">maryam</marquee>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee style="background:radial-gradient(black, transparent) ;" height="60" width="300" behavior="slide" direction="right">maryam</marquee>
+        <marquee style="background:radial-gradient(black, transparent) ;" height="60" width="300" hspace="200">maryam</marquee>
+        <marquee style="background:radial-gradient(black, transparent) ;" height="60" width="300" hspace="200" vspace="200">maryam</marquee>
+        <marquee style="background:radial-gradient(black, transparent) ;" height="60" width="100" hspace="200" loop="5" behavior="slide">maryam</marquee>
+        <marquee style="background:radial-gradient(black, transparent) ;" height="60" width="300" hspace="200" scrollamount="10">maryam</marquee>
+        <marquee>
+            <img src="izna.jpg"/>
+            <img src="izna.jpg"/>
+        </marquee>
+        <form>
+            <input type="email" required oninvalid="error_massage(this)" oninput="error_massage()"/>
+            <button type="submit">send</button>
+        </form>
+        <script>
+            function error_massage(input){
+                if(input.value==('')){
+                    input.setCustomValidity('write some thing');
+                }
+                else if(input.validity.typeMismatch){
+              input.setCustomValidity('something rong');
+                }
+                else{
+                    input.setCustomValidity('');
+                }
+                return true;
+            }
+        </script>
+    </body> 
+</html>
